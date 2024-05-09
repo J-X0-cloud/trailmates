@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Trailmates",
+    "slug": "trailmates",
+    "scheme": "trailmates",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "backgroundColor": "#FFF8EC",
+    "ios": {
+      "bundleIdentifier": "com.trailmates.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "Trailmates reads your daily step count so your steps can move your team along its route.",
+        "NSMotionUsageDescription": "Trailmates uses motion data to count steps when Health is unavailable."
+      }
+    },
+    "android": {
+      "package": "com.trailmates.app",
+      "edgeToEdgeEnabled": true,
+      "permissions": ["android.permission.ACTIVITY_RECOGNITION"]
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
